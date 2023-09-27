@@ -1,0 +1,44 @@
+.driver img{
+    size: 200px;
+    display: block;
+    margin-left: 500px;
+    border-radius: 15px;
+}
+.person {
+    display: flex;
+    align-items: center;
+  }
+  
+  .person h2 {
+    margin-right: 20px;
+  }
+  
+  .person img {
+    max-width: 100px;
+    
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 1rem;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #fff;
+    color: #359381;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #359381;
+    color: #fff;
+  }
+  
+  

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WRC 2023 Drivers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      position: relative; /* Required for z-index */
+    }
+    .parallax {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1; /* Place behind content */
+      overflow: hidden;
+    }
+    .parallax img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      
+    }
+    @keyframes parallaxScroll {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-50%);
+      }
+    }
+    header {
+      border-radius: 10px;
+      background-color: rgba(62, 139, 124, 0.534);
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: relative; /* To be above the parallax background */
+      z-index: 1;
+    }
+    .container {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background-color: rgba(62, 139, 124, 0.534); /* Slightly transparent background */
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative; /* To be above the parallax background */
+      z-index: 1;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .driver {
+      margin-bottom: 1rem;
+      padding: 1rem;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      display: flex;
+      align-items: center; /* Center vertically */
+    }
+    .driver img {
+      flex-shrink: 0;
+      width: 150px; /* Adjust image width as needed */
+      height: auto;
+      margin-right: 1rem;
+      border-radius: 5px;
+      
+    }
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .logo {
+  width: 150px;
+  margin-right: 750px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(62, 139, 124, 0);
+  padding: 1rem;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #359381;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #359381;
+  color: #fff;
+}
+
+  </style>
+</head>
+<body>
+ 
+  <nav>
+    <img src="logo_rally.png" class="logo">
+    <a href="index.html">Go to Home Page</a>
+    <a href="https://youtu.be/ji6LSMZdf2I">Race</a>
+    <a href="https://www.motorsport.com/world-rx/schedule/2023/">Event</a>
+  </nav>
+  
+  <div class="parallax">
+    <img src="hill1.png" id="hill1">
+    <img src="hill2.png" id="hill2">
+    <img src="hill3.png" id="hill3">
+    <img src="hill4.png" id="hill4">
+    <img src="hill5.png" id="hill5">
+    <img src="tree.png" id="tree">
+    <img src="rally.png" id="rally">
+    <img src="leaf.png" id="leaf">
+    <img src="plant.png" id="plant">
+  </div>
+  <header>
+    <h1>World Rally Championship 2023 Drivers</h1>
+  </header>
+  <div class="container">
+    <h2>List of Drivers</h2>
+    <div class="driver">
+      <img src="Driver-1.jpeg">
+      <div>
+        <h3>Takamoto Katsuta</h3>
+        <p>Country: Japan</p>
+        <p>Team: Hyundai</p>
+        <p>Car: Car Model</p>
+      </div>
+    </div>
+    <div class="driver">
+      <img src="Driver-2.jpeg">
+      <div>
+        <h3>Kalle Rovanperä</h3>
+        <p>Country: Russian</p>
+        <p>Team: Toyota</p>
+        <p>Car: Toyota </p>
+      </div>
+    </div>
+    <div class="driver">
+        <img src="Driver-2.jpeg">
+        <div>
+          <h3>Kalle Rovanperä</h3>
+          <p>Country: Russian</p>
+          <p>Team: Toyota</p>
+          <p>Car: Toyota </p>
+        </div>
+  </div>
+  <div class="driver">
+    <img src="Driver-2.jpeg">
+    <div>
+      <h3>Kalle Rovanperä</h3>
+      <p>Country: Russian</p>
+      <p>Team: Toyota</p>
+      <p>Car: Toyota </p>
+    </div>
+</body>
+</html>
